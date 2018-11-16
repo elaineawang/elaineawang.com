@@ -9,7 +9,17 @@
     crossorigin="anonymous">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.ico">
-  <script src="scroll.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 250) {
+        $("body").addClass("color");
+    } else {
+        $("body").removeClass("color");
+    }
+  });
+  </script>
 
   <style>
     body {
@@ -17,9 +27,9 @@
       padding: 5em;
       max-width: 40em;
       font-size: 14px;
-      background-color: #f00;
-      min-height:1200px;
-      transition:background-color 1s ease;
+      background-color: #FFFFFF;
+      min-height: 1000px;
+      transition:background-color 2s ease;
     }
 
     h1 {
