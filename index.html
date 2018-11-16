@@ -9,6 +9,7 @@
     crossorigin="anonymous">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.ico">
+  <script src="scroll.js"></script>
 
   <style>
     body {
@@ -16,19 +17,19 @@
       padding: 5em;
       max-width: 40em;
       font-size: 14px;
+      background-color: #f00;
+      min-height:1200px;
+      transition:background-color 1s ease;
     }
 
     h1 {
       font-size: 24px;
     }
-    
-    .surprise:hover .surprisegif {
-      display: block;
+
+    .color {
+      background-color: #FFAAAA;
     }
     
-    .surprisegif {
-      display: none;
-    }
   </style>
 </head>
 
@@ -87,8 +88,7 @@
             <strike>data visualization</strike>
           </li>
           <li>
-            <strike><div class="surprise">skydiving
-              <img class="surprisegif" src="/skydiving.jpg" /></div></strike>
+            <strike>skydiving</strike>
           </li>
           <li>paragliding</li>
           <li>
@@ -143,7 +143,7 @@
             <strike>San Diego</strike>
           </li>
           <li>
-            Hanoi
+            <strike>Hanoi</strike>
           </li>
           <li>
             Manila
