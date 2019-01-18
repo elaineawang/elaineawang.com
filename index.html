@@ -10,27 +10,16 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.ico">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script>$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= 250) {
-        $("body").addClass("color");
-    } else {
-        $("body").removeClass("color");
-    }
-  });
-  </script>
 
   <style>
     body {
       margin: 0;
       padding: 5em;
-      max-width: 40em;
+      max-width: 85em;
       font-size: 14px;
       background-color: #FFFFFF;
       min-height: 1000px;
       transition:background-color 2s ease;
-      cursor: ❤️️;
     }
 
     h1 {
@@ -45,12 +34,29 @@
     .color {
       background-color: #FFAAAA;
     }
+
+    canvas {
+      float: right;
+      background: white;
+      display: block;
+      margin: 80px auto;
+    }
+
+    section {
+      float: left;
+      width: 40%;
+    }
+
+    aside {
+      float: right;
+      width: 60%;
+    }
     
   </style>
 </head>
 
 <body>
-
+  <section>
   <h1>
     <strong>
       <a href="index.html">Elaine Wang ‍👩🏻‍💻</a>
@@ -101,6 +107,14 @@
   <p>
     <strong><a href="2018.html">This is what my 2018 looked like.</a></strong>
   </p>
+</section>
+
+<aside>
+    <canvas id="canvas" width="500" height="620"></canvas>
+    <script type="text/javascript" src="bounce.js"></script>
+ </aside>
+
+
 </body>
 
 </html>
